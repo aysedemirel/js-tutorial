@@ -11,12 +11,24 @@ yourName = ourName;
 
 var myVar = 0;
 
+// String values in JavaScript may be written with single or double quotes
+// a string has the same kind of quote at the beginning and end
+var doubleQuoteStr = "This is a string"; 
+var singleQuoteStr = 'This is also a string';
+
+var lastNameLength = 0;
+var lastName = "Lovelace";
+lastNameLength = lastName.length;
+
+var firstName = "Ayse";
+var firstLetter = firstName[0];
+
 // When JavaScript variables are declared, they have an initial value of undefined
 // If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number"
 //  If you concatenate a string with an undefined variable, you will get a literal string of undefined.
 
 // In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
-console.log("/////////////// ARITHMETİC OPERATIONS ///////////////////");
+console.log("/////////////// ARITHMETIC OPERATIONS ///////////////////");
 
 var a = 5;
 var b = 6;
