@@ -148,3 +148,31 @@ lookUpProfile("Kristian", "lastName");
 lookUpProfile("Sherlock", "likes");
 lookUpProfile("Harry", "likes");
 lookUpProfile("Akira", "address");
+//////////////////////////
+function countDown(n){
+  if(n<1)
+  {
+    return [];
+  }
+  else{
+    const numArray = countDown(n-1);
+    numArray.unshift(n);
+    return numArray;
+  }
+}
+
+countDown(10);
+//////////////////////////
+function rangeOfNumbers(startNum, endNum) {
+  if(startNum>endNum)
+  {
+    return [];
+  }
+  else{
+   const array = rangeOfNumbers(startNum+1, endNum);
+   array.unshift(startNum);
+   return array;
+  }
+};
+rangeOfNumbers(1, 5);
+
